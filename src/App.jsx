@@ -33,12 +33,12 @@ const App = () => {
 
   
   return (
-    <div>
+    <div className='h-screen lg:flex bg-black text-white justify-between  ' >
       <Form  title={title}
         settitle={settitle}
         Details={Details}
         setDetails={setDetails}
-        submitHandler={submit_handler} />
+        submit_handler={submit_handler} />
 
       <Notes   Task={Task}
         noteDeleted={noteDeleted} />

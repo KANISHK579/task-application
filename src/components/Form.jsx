@@ -1,16 +1,16 @@
 import React from 'react'
 
-const Form = (submit_handler,Details,title,settitle,setDetails) => {
+const Form = ({submit_handler,Details,title,settitle,setDetails}) => {
   return (
-    <div className='h-screen lg:flex bg-black text-white '>
+    <div >
 
 
       <form onSubmit={(e)=>{
             {submit_handler(e)}
-            }} className=' flex flex-col lg:w-1/2  items-start gap-2 p-10'>
+            }} className=' flex flex-col   items-start gap-2 p-10'>
 
 
-             <h1 className='text-3xl font-bold w-40 line-clamp-4'>Your notes</h1>
+             <h1 className='text-3xl font-bold w-40 line-clamp-4'>Add notes</h1>
 
 
             <input 
