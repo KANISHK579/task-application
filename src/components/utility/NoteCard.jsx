@@ -2,7 +2,9 @@ import React from 'react'
 
 const NoteCard = ({idx,elem,noteDeleted}) => {
   return (
-     <div key={idx} className="relative flex flex-col  justify-between h-52 w-40 p-4  rounded-2xl bg-center bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB_c4ZFRcbahuz6SKDufjznet5FczfRyaQAkwJ7Rrcgw&s=10')]">
+     <div key={idx} onDoubleClick={()=>{
+      
+     }} className="relative flex flex-col  justify-between h-52 w-40 p-4  rounded-2xl bg-center bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB_c4ZFRcbahuz6SKDufjznet5FczfRyaQAkwJ7Rrcgw&s=10')] ">
           <div className='min-w-0' >
           
               <p
